@@ -1,0 +1,48 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+struct data
+{
+    int id;
+    char name[15];
+    int age;
+};
+
+int main()
+{
+    int i,number;
+    struct data *ptr;
+    printf("Enter number of employees:\n");
+    scanf("%d",&number);
+    
+    ptr = (struct data*) malloc(number * sizeof(struct data)); //DMA for the no. of employees
+    
+    for(i=0;i<number;i++)
+    {
+        printf("Enter Person[i] id.no:\n");
+        scanf("%d",&(ptr+i)->id);
+        printf("Enter Person[i] name:\n");
+        scanf("%s",&(ptr+i)->name);
+        printf("Enter Person[i] age:\n");
+        scanf("%d",&(ptr+i)->age);
+    }
+    
+    printf("Employee details...\n");
+    
+    for(i=0;i<number;i++)
+    {
+        printf("%d\t",(ptr+i)->id);
+        printf("%s\t",(ptr+i)->name);
+        printf("%d\t",(ptr+i)->age);
+        printf("\n");
+    }
+
+    return 0;
+}
