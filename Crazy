@@ -1,0 +1,17 @@
+/*C program to calculate compound interest.*/
+ 
+#include <stdio.h>
+ 
+int main()
+{
+    printf("      ^^^   ^^^   ^^^   ^^^   ^^^   ^^^   ^^^   ^^^   ^^^   ^^^\n");
+    printf("      ^^^   ^^^   ^^^   ^^^               ^^^   ^^^   ^^^   ^^^\n");
+    printf("      ^^^   ^^^   ^^^                           ^^^   ^^^   ^^^\n");
+    printf("      ^^^   ^^^          Arunagirinathan              ^^^   ^^^\n");
+    printf("      ^^^                     Weds                          ^^^\n");
+    printf("      ^^^                  Chevvanthi                       ^^^\n");
+    printf("      ^^^   ^^^                                       ^^^   ^^^\n");
+    printf("      ^^^   ^^^   ^^^                           ^^^   ^^^   ^^^\n");
+    printf("      ^^^   ^^^   ^^^   ^^^               ^^^   ^^^   ^^^   ^^^\n");
+    printf("      ^^^   ^^^   ^^^   ^^^   ^^^   ^^^   ^^^   ^^^   ^^^   ^^^\n");
+}
